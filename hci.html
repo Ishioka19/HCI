@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WonderTeach</title>
+    <link rel="stylesheet" href="hci.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="nav-container">
+        <div class="nav-left">
+            <img src="images/logo.png" alt="WonderTeach Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#tutors" class="nav-link">Tutors</a>
+            <a href="#con-us" class="nav-link">About Us</a>
+
+        </div>
+        <div class="nav-right">
+            <a href="#" id="menu-icon" onclick="toggleNav()">☰</a>
+            <a href="#" id="pfp-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                    <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <div id="sideNav" class="side-nav">
+        <a href="#">Home</a>
+        <a href="#">Tutors</a>
+        <a href="#">About Us</a>
+        <a href="#" onclick="closeNav()">Close ✖</a>
+    </div>
+
+    <section id="home">
+        <header class="hero">
+            <h1>Welcome to <span class="highlight">WonderTeach</span></h1>
+            <p>Find the best tutors to help you succeed in your learning journey.</p>
+            <a href="#tutors" class="cta-button">Get Started</a>
+        </header>
+    </section>
+
+<section id="tutors">
+    <div id="container" class="container">
+        <div class="card">
+            <a href="#" class="curr">
+                <div class="card-header">Jacemay Lacamento</div>
+                <div class="card-body">
+                    <div class="text-content">
+                        <b class="sched">Teaching Schedule:</b>
+                        <p>Monday - Friday | 3:00pm - 5:00pm</p>
+                        <p class="teacher">Behavioral, Social Sciences</p>
+                    </div>
+                    <img src="images/jace.jpg" class="profile-img" alt="Teacher">
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#" class="curr">
+                <div class="card-header">Alexa Gillian Aladin</div>
+                <div class="card-body">
+                    <div class="text-content">
+                        <b class="sched">Teaching Schedule:</b>
+                        <p>Tuesday - Sunday | 11:00am - 2:00pm</p>
+                        <p class="teacher">English, Values</p>
+                    </div>
+                    <img src="images/alexa.png" class="profile-img" alt="Teacher">
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#" class="curr">
+                <div class="card-header">Armie Salayog</div>
+                <div class="card-body">
+                    <div class="text-content">
+                        <b class="sched">Teaching Schedule:</b>
+                        <p>Wednesday - Sunday | 2:00pm - 4:00pm</p>
+                        <p class="teacher">Filipino, Science</p>
+                    </div>
+                    <img src="images/armi1.png" class="profile-img" alt="Teacher">
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#" class="curr">
+                <div class="card-header">Jhon Lloyd Pasacsac</div>
+                <div class="card-body">
+                    <div class="text-content">
+                        <b class="sched">Teaching Schedule:</b>
+                        <p>Tuesday - Friday | 7:00am - 11:00am</p>
+                        <p class="teacher">Database Management, Software Engeneering</p>
+                    </div>
+                    <img src="images/lloyd.png" class="profile-img" alt="Teacher">
+                </div>
+            </a>
+        </div>
+        
+    
+        <div class="card">
+            <a href="#" class="curr">
+                <div class="card-header">Jose Asher Bautista</div>
+                <div class="card-body">
+                    <div class="text-content">
+                        <b class="sched">Teaching Schedule:</b>
+                        <p>Thursday - Sunday | 8:00am - 12:00pm</p>
+                        <p class="teacher">Wolrd History, Purposive Communication</p>
+                    </div>
+                    <img src="images/asher.jpg" class="profile-img" alt="Teacher">
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#" class="curr">
+                <div class="card-header">Princess Flores</div>
+                <div class="card-body">
+                    <div class="text-content">
+                        <b class="sched">Teaching Schedule:</b>
+                        <p>Monday - Friday | 3:00pm - 5:00pm</p>
+                        <p class="teacher">History, Biology</p>
+                    </div>
+                    <img src="images/princess.jpg" class="profile-img" alt="Teacher">
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#" class="curr">
+                <div class="card-header">Janua Leah Panes</div>
+                <div class="card-body">
+                    <div class="text-content">
+                        <b class="sched">Teaching Schedule:</b>
+                        <p>Tuesday - Wednesday | 1:00pm - 3:00pm</p>
+                        <p class="teacher">Applied Economics, Principles of Marketing</p>
+                    </div>
+                    <img src="images/januah.jpg" class="profile-img" alt="Teacher">
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#" class="curr">
+                <div class="card-header">Alexa Mich Delos Santos</div>
+                <div class="card-body">
+                    <div class="text-content">
+                        <b class="sched">Teaching Schedule:</b>
+                        <p>Friday - Sunday | 12:00pm - 2:00pm</p>
+                        <p class="teacher">English, Science</p>
+                    </div>
+                    <img src="images/mich1.png" class="profile-img" alt="Teacher">
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="#" class="curr">
+                <div class="card-header">Marc Andrae Decolongon</div>
+                <div class="card-body">
+                    <div class="text-content">
+                        <b class="sched">Teaching Schedule:</b>
+                        <p>Tuesaday - Friday | 9:00am - 12:00pm</p>
+                        <p class="teacher">Baking and Pastry Production</p>
+                    </div>
+                    <img src="images/andrae.jpg" class="profile-img" alt="Teacher">
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="con-us" id="con-us">
+        <div class="mai">Welcome to WonderTeach</div>
+        <div class="cont">
+            <div class="sect">
+                <h2>About Us</h2>
+                <p>We are dedicated to providing top-notch education through experienced and passionate educators. Our goal is to inspire and empower students with knowledge and values.</p>
+            </div>
+            <div class="sect">
+                <h2>Contact Us</h2>
+                <div class="cont-info">
+                    <p><strong>Email:</strong> support@wonderteach.com</p>
+                    <p><strong>Phone:</strong> +159 263 9467</p>
+                    <p><strong>Address:</strong> 156 Learning St., EduCity, Country</p>
+                    <a href="mailto:support@wonderteach.com" class="btn">Email Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="hci.js"></script>
+</body>
+</html>
